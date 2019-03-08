@@ -1,0 +1,145 @@
+html .adminimal,
+html #adminimal,
+html.adminimal a,
+body .adminimal,
+body #adminimal,
+body.adminimal a {
+  font-size: 16px !important;
+  font-size: 100% !important;
+  line-height: 1.5 !important;
+}
+
+.adminimal {
+  z-index: 99;
+  position: fixed !important;
+  bottom: 16px;
+  right: 16px;
+  color: #fefefe;
+  height: 30px;
+}
+
+.adminimal #adminimal-toggle,
+.adminimal #adminimal {
+  display: inline-block;
+}
+
+.adminimal a, .adminimal a:hover, .adminimal .button {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: bold !important;
+  font-size: 10px !important;
+}
+
+.adminimal .button {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: bold !important;
+  color: #fefefe;
+  padding: 8px 12.8px;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.adminimal .button:hover {
+  color: #fefefe;
+}
+
+.adminimal .button.primary {
+  background: #00ACFF;
+}
+
+.adminimal .button.primary:hover {
+  background-color: #008acc;
+}
+
+.adminimal .button.secondary {
+  background: #58667E;
+}
+
+.adminimal .button.secondary:hover {
+  background-color: #465265;
+}
+
+.adminimal .button.tertiary {
+  background: #FF5531;
+}
+
+.adminimal .button.tertiary:hover {
+  background-color: #f32b00;
+}
+
+.adminimal .adminimal-open::before {
+  content: "\02771";
+}
+
+.adminimal .adminimal-close::before {
+  content: "\02770";
+}
+
+.adminimal .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.adminimal .dropdown-child {
+  text-align: left;
+  display: none;
+  background-color: #00ACFF;
+  width: 100%;
+  position: absolute !important;
+  bottom: 22px;
+}
+
+.adminimal .dropdown-child .button {
+  display: block;
+  padding: 8px 12.8px;
+}
+
+.adminimal .dropdown-child .button:hover {
+  background-color: #008acc;
+}
+
+.adminimal .dropdown-child a {
+  color: #fefefe;
+  text-transform: capitalize;
+}
+
+.adminimal .dropdown-child a:hover {
+  color: #fefefe;
+}
+
+.adminimal .dropdown-child a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.adminimal #adminimal-icon {
+  outline: none;
+}
+
+.adminimal .hide {
+  display: none;
+  visibility: hidden;
+}
+
+.adminimal .closed::before {
+  content: "\02770";
+}
+
+.adminimal .mainmenubtn:hover,
+.adminimal #adminimal-toggle:hover {
+  cursor: pointer;
+}
+
+.adminimal.dropdown .mainmenubtn:hover + .dropdown-child,
+.adminimal .dropdown-child:hover {
+  display: block;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .adminimal.hide-mobile {
+    display: none;
+    visibility: hidden;
+  }
+}
