@@ -13,6 +13,10 @@ $global-cursor     : pointer;
 
 html,
 body {
+  font-size: 16px !important;
+  font-size: 100% !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
 	& .adminimal,
   & #adminimal,
   &.adminimal a {
@@ -85,14 +89,14 @@ body {
       position: relative;
       display: inline-block;
   }
-  & .dropdown-child {
+  & .dropdown-submenu {
 
     text-align: left;
     display: none;
     background-color: $primary-color;
     width: 100%;
     position: absolute !important;
-    bottom: 22px;
+    bottom: 30px;
     & .button {
       display: block;
       padding: $global-padding / 2 $global-padding / 1.25 ;
@@ -110,7 +114,7 @@ body {
       }
     }
   }
-  & .dropdown-child a {
+  & .dropdown-submenu a {
       color: white;
       text-decoration: none;
       display: block;
@@ -132,8 +136,8 @@ body {
   & #adminimal-toggle:hover {
     cursor: $global-cursor;
   }
-  &.dropdown .mainmenubtn:hover + .dropdown-child,
-  & .dropdown-child:hover {
+  &.dropdown .mainmenubtn:hover + .dropdown-submenu,
+  & .dropdown-submenu:hover {
       display: block;
   }
 

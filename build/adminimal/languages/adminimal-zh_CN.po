@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Project-Id-Version: Adminimal\n"
+"POT-Creation-Date: 2019-03-07 21:28+0800\n"
+"PO-Revision-Date: 2019-03-09 02:04+0800\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: adminimal.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: zh\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: adminimal.php:62
+msgid "New"
+msgstr "新"
+
+#: adminimal.php:63
+msgid "Admin"
+msgstr "管理员"
+
+#: adminimal.php:64
+msgid "Edit"
+msgstr "编辑"
+
+#: adminimal.php:65
+msgid "Me"
+msgstr "我"
+
+#. Plugin Name of the plugin/theme
+msgid "Adminimal"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/adminimal/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A minimalist front-end admin toolbar for Administrators that includes: "
+"Dashboard, Edit, Profile, New post, New Page, New Attachment, and New Custom "
+"Post Types."
+msgstr ""
+"管理员的简约前端管理工具栏, 包括: 仪表板、编辑、配置文件、新帖子、新页面、新"
+"附件和新自定义帖子类型。"
+
+#. Author of the plugin/theme
+msgid "Alejandro Urrutia"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.colorale.com"
+msgstr ""

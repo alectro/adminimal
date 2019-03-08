@@ -1,3 +1,11 @@
+html,
+body {
+  font-size: 16px !important;
+  font-size: 100% !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+}
+
 html .adminimal,
 html #adminimal,
 html.adminimal a,
@@ -81,34 +89,34 @@ body.adminimal a {
   display: inline-block;
 }
 
-.adminimal .dropdown-child {
+.adminimal .dropdown-submenu {
   text-align: left;
   display: none;
   background-color: #00ACFF;
   width: 100%;
   position: absolute !important;
-  bottom: 22px;
+  bottom: 30px;
 }
 
-.adminimal .dropdown-child .button {
+.adminimal .dropdown-submenu .button {
   display: block;
   padding: 8px 12.8px;
 }
 
-.adminimal .dropdown-child .button:hover {
+.adminimal .dropdown-submenu .button:hover {
   background-color: #008acc;
 }
 
-.adminimal .dropdown-child a {
+.adminimal .dropdown-submenu a {
   color: #fefefe;
   text-transform: capitalize;
 }
 
-.adminimal .dropdown-child a:hover {
+.adminimal .dropdown-submenu a:hover {
   color: #fefefe;
 }
 
-.adminimal .dropdown-child a {
+.adminimal .dropdown-submenu a {
   color: white;
   text-decoration: none;
   display: block;
@@ -132,8 +140,8 @@ body.adminimal a {
   cursor: pointer;
 }
 
-.adminimal.dropdown .mainmenubtn:hover + .dropdown-child,
-.adminimal .dropdown-child:hover {
+.adminimal.dropdown .mainmenubtn:hover + .dropdown-submenu,
+.adminimal .dropdown-submenu:hover {
   display: block;
 }
 

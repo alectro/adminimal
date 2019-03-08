@@ -4,7 +4,7 @@ Tags: toolbar, theme
 Requires at least: 3.3
 Tested up to: 5.1
 Requires PHP: 5.2.4
-Stable tag: 0.4.2
+Stable tag: 0.4.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,15 @@ A minimalist front-end admin toolbar for Administrators that includes: Dashboard
 4. Visit your website, you can see the toolbar on the bottom right corner of the browser.
 
 == Changelog ==
+
+= 0.4.3 =
+* Changed css classes.
+* Improved positioning and visual style across Themes.
+* Added Portuguese (pt_BR) and Chinese (zh_CN) translations.
+
+= 0.4.2 =
+* Correct path for css.
+* Improved function to create new contents.
 
 = 0.4.1 =
 * Fixed js path.

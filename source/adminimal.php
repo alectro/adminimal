@@ -3,7 +3,7 @@
 * Plugin Name: Adminimal
 * Plugin URI: https://wordpress.org/plugins/adminimal/
 * Description: A minimalist front-end admin toolbar for Administrators that includes: Dashboard, Edit, Profile, New post, New Page, New Attachment, and New Custom Post Types.
-* Version: 0.4.2
+* Version: 0.4.3
 * Author: Alejandro Urrutia
 * Author URI: https://www.colorale.com
 * License: GPLv2 or later
@@ -18,14 +18,14 @@ add_action( 'plugins_loaded', 'adminimal_textdomain' );
 
 // Styles
 function adminimal_styles() {
-  wp_register_style( 'adminimal',  plugin_dir_url( __FILE__ ) . 'css/adminimal.min.css', '1', true );
+  wp_register_style( 'adminimal',  plugin_dir_url( __FILE__ ) . 'css/adminimal.css', '1', true );
   wp_enqueue_style( 'adminimal' );
 }
 add_action( 'wp_enqueue_scripts', 'adminimal_styles' );
 
 // Scripts
 function adminimal_scripts() {
- wp_enqueue_script( 'adminimal-fx',  plugin_dir_url( __FILE__ ) . 'js/adminimal-fx.min.js', array('jquery'), '1', true );
+ wp_enqueue_script( 'adminimal-fx',  plugin_dir_url( __FILE__ ) . 'js/adminimal-fx.js', array('jquery'), '1', true );
 }
 add_action( 'wp_enqueue_scripts', 'adminimal_scripts' );
 
@@ -43,14 +43,14 @@ function getPosts(){
   $types = get_post_types( $argsPosts, $output, $operator );
   foreach ( $types as $type ) {
 
-		echo '<div class="button"><a href="' . get_site_url() . '/wp-admin/post-new.php?post_type=' . $type->name . '">' . __($type->labels->new_item, 'default') . '</a></div>';
+		echo '<div class="button primary"><a href="' . get_site_url() . '/wp-admin/post-new.php?post_type=' . $type->name . '">' . __($type->labels->singular_name	, 'default') . '</a></div>';
   }
 
 	// Custom Post Types
 	$typesCPT = get_post_types( $argsCPT, $output, $operator );
   foreach ( $typesCPT as $typeCPT ) {
 
-		echo '<div class="button"><a href="' . get_site_url() . '/wp-admin/post-new.php?post_type=' . $typeCPT->name . '">' . __($typeCPT->labels->new_item, 'default') . '</a></div>';
+		echo '<div class="button primary"><a href="' . get_site_url() . '/wp-admin/post-new.php?post_type=' . $typeCPT->name . '">' . __($typeCPT->labels->singular_name	, 'default') . '</a></div>';
   }
 }
 
@@ -71,7 +71,7 @@ function adminDash() {
     echo '<div class="adminimal hide-mobile dropdown adminimal-left">';
       echo '<div id="adminimal">';
         echo $menuNew;
-          echo '<div class="dropdown-child primary" id="new-posts">';
+          echo '<div class="dropdown-submenu" id="new-posts">';
             getPosts();
           echo '</div>';
         echo $menuDash;
