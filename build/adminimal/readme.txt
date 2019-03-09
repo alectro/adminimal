@@ -4,7 +4,7 @@ Tags: toolbar, theme
 Requires at least: 3.3
 Tested up to: 5.1
 Requires PHP: 5.2.4
-Stable tag: 0.4.3
+Stable tag: 0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,16 +21,22 @@ A minimalist front-end admin toolbar for Administrators that includes: Dashboard
 1. Visit 'Plugins > Add New'
 2. Search for 'adminimal'
 3. Activate adminimal from your Plugins page.
-4. Visit your website, you can see the toolbar on the bottom right corner of the browser.
+4. Visit Settings page for options.
+5. Visit your website, you can see the toolbar on the bottom right corner of the browser.
 
 = From WordPress.org =
 
 1. Download adminimal.
 2. Upload the 'adminimal' directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc...)
 3. Activate adminimal from your Plugins page. (You'll be greeted with a Welcome page.)
-4. Visit your website, you can see the toolbar on the bottom right corner of the browser.
+4. Visit Settings page for options.
+5. Visit your website, you can see the toolbar on the bottom right corner of the browser.
 
 == Changelog ==
+
+= 0.5 =
+* Settings page added.
+* Update for Spanish (es_ES) and Portuguese (pt_BR) languages.
 
 = 0.4.3 =
 * Changed css classes.

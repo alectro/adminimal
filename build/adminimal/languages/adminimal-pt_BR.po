@@ -1,13 +1,15 @@
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Project-Id-Version: Adminimal\n"
-"POT-Creation-Date: 2019-03-07 21:28+0800\n"
-"PO-Revision-Date: 2019-03-09 02:05+0800\n"
+"POT-Creation-Date: 2019-03-09 21:32+0800\n"
+"PO-Revision-Date: 2019-03-09 21:44+0800\n"
+"Last-Translator: Alejandro Urrutia <alectro@gmail.com>\n"
 "Language-Team: \n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 2.2.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -16,30 +18,56 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Last-Translator: \n"
-"Language: pt\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: adminimal.php:62
+#: inc/adminimal.php:42
 msgid "New"
 msgstr "Novo"
 
-#: adminimal.php:63
+#: inc/adminimal.php:43
 msgid "Admin"
 msgstr "Admin"
 
-#: adminimal.php:64
+#: inc/adminimal.php:44
 msgid "Edit"
 msgstr "Editar"
 
-#: adminimal.php:65
+#: inc/adminimal.php:45
 msgid "Me"
 msgstr "Eu"
 
+#: inc/settings.php:19 pages/adminimal-settings.php:3
+msgid "Adminimal settings"
+msgstr "Configurações de Adminimal"
+
 #. Plugin Name of the plugin/theme
+#: inc/settings.php:20
 msgid "Adminimal"
 msgstr ""
+
+#: pages/adminimal-settings.php:4
+msgid "WordPress Toolbar"
+msgstr "Barra do WordPress"
+
+#: pages/adminimal-settings.php:5
+msgid "Do you also want to show WordPress Toolbar when viewing the site?"
+msgstr "Você também quer mostrar a Barra do WordPress ao visualizar o site?"
+
+#: pages/adminimal-settings.php:6
+msgid ""
+"Choosing 'Show' will show both, adminimal toolbar and WordPress Toolbar."
+msgstr ""
+"Escolhendo ' Mostrar ' mostrará ambos, barra de ferramentas adminimal e "
+"Barra do WordPress."
+
+#: pages/adminimal-settings.php:30
+msgid "Hide"
+msgstr "Ocultar"
+
+#: pages/adminimal-settings.php:37
+msgid "Show"
+msgstr "Mostrar"
 
 #. Plugin URI of the plugin/theme
 msgid "https://wordpress.org/plugins/adminimal/"

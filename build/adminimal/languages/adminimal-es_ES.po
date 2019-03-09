@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Adminimal\n"
-"POT-Creation-Date: 2019-03-07 17:24+0800\n"
-"PO-Revision-Date: 2019-03-07 17:25+0800\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2019-03-09 21:32+0800\n"
+"PO-Revision-Date: 2019-03-09 21:33+0800\n"
+"Last-Translator: Alejandro Urrutia <alectro@gmail.com>\n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -21,25 +21,54 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: adminimal.php:62
+#: inc/adminimal.php:42
 msgid "New"
 msgstr "Nuevo"
 
-#: adminimal.php:63
+#: inc/adminimal.php:43
 msgid "Admin"
 msgstr "Escritorio"
 
-#: adminimal.php:64
+#: inc/adminimal.php:44
 msgid "Edit"
 msgstr "Editar"
 
-#: adminimal.php:65
+#: inc/adminimal.php:45
 msgid "Me"
 msgstr "Yo"
 
+#: inc/settings.php:19 pages/adminimal-settings.php:3
+msgid "Adminimal settings"
+msgstr "Configuración de Adminimal"
+
 #. Plugin Name of the plugin/theme
+#: inc/settings.php:20
 msgid "Adminimal"
 msgstr "Adminimal"
+
+#: pages/adminimal-settings.php:4
+msgid "WordPress Toolbar"
+msgstr "Barra de herramientas de WordPress"
+
+#: pages/adminimal-settings.php:5
+msgid "Do you also want to show WordPress Toolbar when viewing the site?"
+msgstr ""
+"¿También desea mostrar la barra de herramientas de WordPress al ver el sitio?"
+
+#: pages/adminimal-settings.php:6
+msgid ""
+"Choosing 'Show' will show both, adminimal toolbar and WordPress Toolbar."
+msgstr ""
+"Al elegir ' Mostrar ' se mostrarán tanto la barra de herramientas de "
+"adminimal como la barra de herramientas de WordPress."
+
+#: pages/adminimal-settings.php:30
+msgid "Hide"
+msgstr "Ocultar"
+
+#: pages/adminimal-settings.php:37
+msgid "Show"
+msgstr "Mostrar"
 
 #. Plugin URI of the plugin/theme
 msgid "https://wordpress.org/plugins/adminimal/"

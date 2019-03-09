@@ -12,19 +12,22 @@ A simple WordPress plugin that enables a minimalist front-end admin toolbar for 
 - Edit the content you are viewing.
 - Visit your profile page.
 - Hide/Show the **Adminimal** toolbar.
+- Plugin settings page.
 
 ## Installation from your website
 1. Visit 'Plugins > Add New'
 2. Search for 'Adminimal'
 3. Activate adminimal from your Plugins page.
-4. Visit your website, you can see the toolbar on the bottom right corner of the browser.
+4. Visit Settings page for options.
+5. Visit your website, you can see the toolbar on the bottom right corner of the browser.
 
 ## Installation from WordPress or Github
 1. Download the plugin from [WordPress](https://wordpress.org/plugins/adminimal/ "Adminimal on WordPress") or from [Github](https://github.com/alectro/adminimal/archive/master.zip "Adminimal on Github").
 2. Uncompress the downloaded file.
 3. Upload the 'adminimal' directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc...)
 4. Activate Adminimal from your Plugins page.
-5. Visit your website, you can see the toolbar on the bottom right corner of the browser.
+5. Visit Settings page for options.
+6. Visit your website, you can see the toolbar on the bottom right corner of the browser.
 
 ## Compatibility
 Tested on WordPress +4.6, works with all Themes.
