@@ -1,10 +1,10 @@
 === Adminimal ===
 Contributors: alectro
-Tags: toolbar, theme
+Tags: toolbar, settings, dashboard, administrator, theme
 Requires at least: 3.3
 Tested up to: 5.1
 Requires PHP: 5.2.4
-Stable tag: 0.5
+Stable tag: 0.6.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,6 +33,16 @@ A minimalist front-end admin toolbar for Administrators that includes: Dashboard
 5. Visit your website, you can see the toolbar on the bottom right corner of the browser.
 
 == Changelog ==
+
+= 0.6.1 =
+* Fixed an issue where adminimal.php wasn't added to the plugin.
+
+= 0.6 =
+* Adminimal toolbar added for Administrator and Editor.
+* Accessibility improvements: AA and AA+ score for color contrast, pixel values changed to rem to respect users default font settings.
+* Removed body class 'admin-bar' when WordPress Toolbar is set to 'Hide' to prevent empty space on top for navigation and headers.
+* Added body class 'adminimal'.
+* Removed redundant CSS classes and properties.
 
 = 0.5 =
 * Settings page added.

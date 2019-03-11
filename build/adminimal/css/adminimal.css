@@ -1,152 +1,146 @@
-html,
-body {
-  font-size: 16px !important;
-  font-size: 100% !important;
-  line-height: 1.5 !important;
-  margin: 0 !important;
-}
-
-html .adminimal,
-html #adminimal,
-html.adminimal a,
-body .adminimal,
-body #adminimal,
-body.adminimal a {
-  font-size: 16px !important;
-  font-size: 100% !important;
+body.adminimal .adminimal-toolbar,
+body.adminimal #adminimal,
+body.adminimal.adminimal-toolbar a {
+  font-size: 1rem !important;
   line-height: 1.5 !important;
 }
 
-.adminimal {
+.admin-bar .site-navigation-fixed.navigation-top {
+  top: 0;
+}
+
+.adminimal-toolbar {
   z-index: 99;
   position: fixed !important;
-  bottom: 16px;
-  right: 16px;
+  bottom: 1rem;
+  right: 1rem;
   color: #fefefe;
-  height: 30px;
+  height: 2rem;
 }
 
-.adminimal #adminimal-toggle,
-.adminimal #adminimal {
+.adminimal-toolbar #adminimal-toggle,
+.adminimal-toolbar #adminimal {
   display: inline-block;
+  display: inline-flex;
 }
 
-.adminimal a, .adminimal a:hover, .adminimal .button {
+.adminimal-toolbar a, .adminimal-toolbar a:hover, .adminimal-toolbar .button {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: bold !important;
-  font-size: 10px !important;
+  font-size: 0.75rem !important;
+  color: #fefefe !important;
 }
 
-.adminimal .button {
+.adminimal-toolbar .button {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-weight: bold !important;
+  font-weight: bold;
   color: #fefefe;
-  padding: 8px 12.8px;
+  padding: 0.5rem 0.8rem;
   border-radius: 0;
   border: 0;
   margin: 0;
   text-align: left;
 }
 
-.adminimal .button:hover {
+.adminimal-toolbar .button:hover {
   color: #fefefe;
 }
 
-.adminimal .button.primary {
-  background: #00ACFF;
+.adminimal-toolbar .button.primary {
+  background: #0093C3;
 }
 
-.adminimal .button.primary:hover {
-  background-color: #008acc;
+.adminimal-toolbar .button.primary:hover {
+  background-color: #00769c;
 }
 
-.adminimal .button.secondary {
-  background: #58667E;
+.adminimal-toolbar .button.secondary {
+  background: #496B77;
 }
 
-.adminimal .button.secondary:hover {
-  background-color: #465265;
+.adminimal-toolbar .button.secondary:hover {
+  background-color: #3a565f;
 }
 
-.adminimal .button.tertiary {
-  background: #FF5531;
+.adminimal-toolbar .button.tertiary {
+  background: #CF541A;
 }
 
-.adminimal .button.tertiary:hover {
-  background-color: #f32b00;
+.adminimal-toolbar .button.tertiary:hover {
+  background-color: #a64315;
 }
 
-.adminimal .adminimal-open::before {
+.adminimal-toolbar .adminimal-toolbar-open::before {
   content: "\02771";
 }
 
-.adminimal .adminimal-close::before {
+.adminimal-toolbar .adminimal-toolbar-close::before {
   content: "\02770";
 }
 
-.adminimal .dropdown {
+.adminimal-toolbar .dropdown {
   position: relative;
   display: inline-block;
 }
 
-.adminimal .dropdown-submenu {
+.adminimal-toolbar .dropdown-submenu {
   text-align: left;
   display: none;
-  background-color: #00ACFF;
+  background-color: #0093C3;
   width: 100%;
   position: absolute !important;
-  bottom: 30px;
+  bottom: 2rem;
 }
 
-.adminimal .dropdown-submenu .button {
+.adminimal-toolbar .dropdown-submenu .button {
   display: block;
-  padding: 8px 12.8px;
+  padding: 0.5rem 0.8rem;
 }
 
-.adminimal .dropdown-submenu .button:hover {
-  background-color: #008acc;
+.adminimal-toolbar .dropdown-submenu .button:hover {
+  background-color: #00769c;
 }
 
-.adminimal .dropdown-submenu a {
+.adminimal-toolbar .dropdown-submenu a {
   color: #fefefe;
   text-transform: capitalize;
 }
 
-.adminimal .dropdown-submenu a:hover {
+.adminimal-toolbar .dropdown-submenu a:hover {
   color: #fefefe;
 }
 
-.adminimal .dropdown-submenu a {
+.adminimal-toolbar .dropdown-submenu a {
   color: white;
   text-decoration: none;
   display: block;
 }
 
-.adminimal #adminimal-icon {
+.adminimal-toolbar #adminimal-icon {
   outline: none;
 }
 
-.adminimal .hide {
+.adminimal-toolbar .hide {
   display: none;
   visibility: hidden;
 }
 
-.adminimal .closed::before {
+.adminimal-toolbar .closed::before {
   content: "\02770";
 }
 
-.adminimal .mainmenubtn:hover,
-.adminimal #adminimal-toggle:hover {
+.adminimal-toolbar .mainmenubtn:hover,
+.adminimal-toolbar #adminimal-toggle:hover {
   cursor: pointer;
 }
 
-.adminimal.dropdown .mainmenubtn:hover + .dropdown-submenu,
-.adminimal .dropdown-submenu:hover {
+.adminimal-toolbar.dropdown .mainmenubtn:hover + .dropdown-submenu,
+.adminimal-toolbar .dropdown-submenu:hover {
   display: block;
 }
 
 @media screen and (max-width: 39.9375em) {
-  .adminimal.hide-mobile {
+  .adminimal-toolbar.hide-mobile {
     display: none;
     visibility: hidden;
   }

@@ -1,3 +1,20 @@
+<?php
+// Global variables
+require_once __DIR__ . '/../var.php';
+
+
+// Show
+if (esc_attr( get_option('adm_hideshow') ) == 1) {
+		$checkHide = '';
+		$checkShow = ' checked';
+
+	// Hide
+} else {
+		$checkHide = ' checked';
+		$checkShow = '';
+}
+
+?>
 <div class="wrap">
 
   <h1><?php _e('Adminimal settings', 'adminimal') ?></h1>
@@ -9,19 +26,6 @@
   <form method="post" action="options.php">
   <?php settings_fields( 'adminimal-settings-group' ); ?>
   <?php do_settings_sections( 'adminimal-settings-group' ); ?>
-
-  <?php
-  if (esc_attr( get_option('adm_hideshow') ) == 0) {
-      $checkHide = ' checked';
-      $checkShow = '';
-  } elseif (esc_attr( get_option('adm_hideshow') ) == 1) {
-      $checkHide = '';
-      $checkShow = ' checked';
-  } else {
-      $checkHide = ' checked';
-      $checkShow = '';
-  }
-  ?>
 
   <fieldset>
     <div class="form-field">

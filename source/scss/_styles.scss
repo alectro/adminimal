@@ -1,46 +1,53 @@
-$primary-color     : #00ACFF;
-$secondary-color   : #58667E;
-$tertiary-color    : #FF5531;
+// Color variables
+$primary-color     : #0093C3;
+$secondary-color   : #496B77;
+$tertiary-color    : #CF541A;
 $white             : #fefefe;
 
+// Font variables
 $global-font       : -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-$global-font-size  : 16px;
-$global-font-weight: bold !important;
-$global-padding    : 16px;
+$global-font-size  : 1rem;
+$small-font-size   : .75rem;
+$global-font-weight: bold;
+
+// Layout variables
+$global-padding    : 1rem;
+
+// General variables
 $global-radius     : 0;
 $global-cursor     : pointer;
 
 
-html,
-body {
-  font-size: 16px !important;
-  font-size: 100% !important;
-  line-height: 1.5 !important;
-  margin: 0 !important;
-	& .adminimal,
+body.adminimal {
+	& .adminimal-toolbar,
   & #adminimal,
-  &.adminimal a {
-		font-size: 16px !important;
-		font-size: 100% !important;
+  &.adminimal-toolbar a {
+		font-size: $global-font-size !important;
 		line-height: 1.5 !important;
 	}
 }
 
-.adminimal {
+.admin-bar .site-navigation-fixed.navigation-top {
+  top: 0;
+}
+
+.adminimal-toolbar {
   z-index: 99;
   position: fixed !important;
   bottom: $global-padding;
   right: $global-padding;
   color: $white;
-  height: 30px;
+  height: $global-padding * 2;
   & #adminimal-toggle,
   & #adminimal {
     display: inline-block;
+    display: inline-flex;
   }
   & a, & a:hover, .button {
     font-family: $global-font;
-    font-weight: $global-font-weight;
-    font-size: 10px !important;
+    font-weight: $global-font-weight !important;
+    font-size: $small-font-size !important;
+    color: $white !important;
   }
 
   & .button {
@@ -76,10 +83,10 @@ body {
     }
   }
 
-  & .adminimal-open::before {
+  & .adminimal-toolbar-open::before {
     content:  "\02771";
   }
-  & .adminimal-close::before {
+  & .adminimal-toolbar-close::before {
     content:  "\02770";
   }
 
@@ -94,7 +101,7 @@ body {
     background-color: $primary-color;
     width: 100%;
     position: absolute !important;
-    bottom: 30px;
+    bottom: round($global-padding * 1.9);
     & .button {
       display: block;
       padding: $global-padding / 2 $global-padding / 1.25 ;

@@ -9,7 +9,6 @@ function adminimal_settings_page() {
   require_once __DIR__ . ('/../pages/adminimal-settings.php');
 }
 
-
 // Create custom plugin settings menu
 add_action('admin_menu', 'adminimal_create_menu');
 
