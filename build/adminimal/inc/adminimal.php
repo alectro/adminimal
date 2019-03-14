@@ -2,6 +2,7 @@
 /**
 * Adminimal Functions
 */
+
 // Global variables
 require_once __DIR__ . '/../var.php';
 
@@ -26,28 +27,32 @@ if (esc_attr( get_option('adm_hideshow') ) == 1) {
 }
 
 
-
 // Get all WordPress post types
 function getPosts(){
 
-  $argsPosts          = array('public' => true, '_builtin' => true);
-  $argsCPT            = array('public' => true, '_builtin' => false);
+  function listAllPosts($exclude = array( 'attachment' )) {
 
-	$output             = 'objects';
-	$operator           = 'and';
+    $args     = array('public' => true, '_builtin' => false);
+  	$output   = 'objects';
+  	$operator = 'or';
 
-  // Posts Pages
-  $types = get_post_types( $argsPosts, $output, $operator );
-  foreach ( $types as $type ) {
+  	$types = get_post_types( $args, $output, $operator );
 
-		echo '<div class="button primary"><a href="' . get_site_url() . '/wp-admin/post-new.php?post_type=' . $type->name . '">' . __($type->labels->singular_name	, 'default') . '</a></div>';
+    foreach ( $types as $type ) {
+      if( TRUE === in_array( $type->name, $exclude ) )
+          continue;
+
+      echo '<div class="button primary"><a href="' . get_site_url() . '/wp-admin/post-new.php?post_type=' . $type->name . '">' . __($type->labels->singular_name	, 'default') . '</a></div>';
+    }
   }
 
-	// Custom Post Types
-	$typesCPT = get_post_types( $argsCPT, $output, $operator );
-  foreach ( $typesCPT as $typeCPT ) {
+  $user = wp_get_current_user();
+  if ( in_array( 'author', (array) $user->roles ) ) {
+    listAllPosts(array( 'attachment', 'page' ));
 
-		echo '<div class="button primary"><a href="' . get_site_url() . '/wp-admin/post-new.php?post_type=' . $typeCPT->name . '">' . __($typeCPT->labels->singular_name	, 'default') . '</a></div>';
+
+  } else {
+    listAllPosts(array( 'attachment' ));
   }
 }
 
@@ -56,7 +61,7 @@ function adminDash() {
 
   global $post, $current_user;
   $user = $current_user;
-  $allowed_roles = array('administrator', 'editor');
+  $allowed_roles = array('administrator', 'editor', 'author');
 
 
   if ( is_user_logged_in() && array_intersect($allowed_roles, $user->roles )) {
@@ -80,11 +85,9 @@ function adminDash() {
             getPosts();
           echo '</div>';
         echo $menuDash;
-
         if(current_user_can( 'edit_others_posts', $post->ID ) || ($post->post_author == $current_user->ID))  {
           echo $menuDashEdit;
         }
-
         echo $menuDashUser;
       echo '</div>';
     echo '<div id="adminimal-toggle" class="adminimal-toolbar-right"><a class="secondary button adminimal-toolbar-open" id="adminimal-icon"></a></div>';
@@ -93,4 +96,17 @@ function adminDash() {
   }
 }
 add_action( 'wp_footer', 'adminDash');
+
+
+// Remove margin-top 32px from html tag
+function remove_admin_login_header() {
+  // Show
+  if (esc_attr( get_option('adm_hideshow') ) == 1) {
+  	// Hide
+  } else {
+    remove_action('wp_head', '_admin_bar_bump_cb');
+  }
+}
+add_action('get_header', 'remove_admin_login_header');
+
  ?>

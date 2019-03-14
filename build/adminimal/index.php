@@ -3,7 +3,7 @@
 * Plugin Name: Adminimal
 * Plugin URI: https://wordpress.org/plugins/adminimal/
 * Description: A minimalist front-end admin toolbar for Administrators that includes: Dashboard, Edit, Profile, New post, New Page, New Attachment, and New Custom Post Types.
-* Version: 0.6.1
+* Version: 0.7.1
 * Author: Alejandro Urrutia
 * Author URI: https://www.colorale.com
 * License: GPLv2 or later

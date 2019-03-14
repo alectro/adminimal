@@ -8,7 +8,7 @@ $white             : #fefefe;
 $global-font       : -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 $global-font-size  : 1rem;
 $small-font-size   : .75rem;
-$global-font-weight: bold;
+$global-font-weight: normal;
 
 // Layout variables
 $global-padding    : 1rem;
@@ -16,6 +16,7 @@ $global-padding    : 1rem;
 // General variables
 $global-radius     : 0;
 $global-cursor     : pointer;
+$global-transition : all .3s ease;
 
 
 body.adminimal {
@@ -105,9 +106,11 @@ body.adminimal {
     & .button {
       display: block;
       padding: $global-padding / 2 $global-padding / 1.25 ;
+			transition: $global-transition;
     }
     & .button:hover {
       background-color: scale-color($primary-color, $lightness: -20%);
+			transition: $global-transition;
     }
 
     & a {
@@ -121,8 +124,8 @@ body.adminimal {
   }
   & .dropdown-submenu a {
       color: white;
-      text-decoration: none;
       display: block;
+			transition: $global-transition;
   }
   & #adminimal-icon {
       outline: none;
@@ -133,17 +136,26 @@ body.adminimal {
 
   }
   & .closed {
+		opacity: 0.2;
+		transition: $global-transition;
+		//border-radius: 100%;
     &::before {
       content:  "\02770";
     }
+		&:hover {
+				opacity: 1;
+				transition: $global-transition;
+		}
   }
   & .mainmenubtn:hover,
   & #adminimal-toggle:hover {
     cursor: $global-cursor;
+		transition: $global-transition;
   }
   &.dropdown .mainmenubtn:hover + .dropdown-submenu,
   & .dropdown-submenu:hover {
       display: block;
+			transition: $global-transition;
   }
 
   @media screen and (max-width: 39.9375em) {

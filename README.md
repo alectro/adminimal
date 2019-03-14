@@ -5,14 +5,14 @@ A simple WordPress plugin that enables a minimalist front-end admin toolbar for 
 
 
 ## Features
-- Automatically hide front-end admin toolbar for Administrators.
+- Automatically hide front-end WordPress Toolbar for supported roles.
 - Adds a floating minimalist toolbar at the bottom right corner of the browser.
-- Create new posts, pages, attachments and custom post types.
+- Create new posts, pages, and registered custom post types.
 - Access the Dashboard.
 - Edit the content you are viewing.
-- Visit your profile page.
-- Hide/Show the **Adminimal** toolbar.
+- Access logged user profile page.
 - Plugin settings page.
+- Optionally choose to concurrently show the WordPress Toolbar.
 
 ## Installation from your website
 1. Visit 'Plugins > Add New'
