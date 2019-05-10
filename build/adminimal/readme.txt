@@ -2,7 +2,7 @@
 Contributors: alectro
 Tags: toolbar, settings, dashboard, administrator, theme
 Requires at least: 3.3
-Tested up to: 5.1
+Tested up to: 5.2
 Requires PHP: 5.2.4
 Stable tag: 0.7.1
 License: GPLv2 or later
